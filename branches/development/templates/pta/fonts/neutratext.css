@@ -1,0 +1,17 @@
+/* Neutra text light */
+@font-face {
+	font-family: 'NeutraText';
+	src: url('src/NeutraTextTF-LightAlt.eot');
+	src: local('☺'), url('src/NeutraTextTF-LightAlt.woff') format('woff'), url('src/NeutraTextTF-LightAlt.ttf') format('truetype'), url('src/NeutraTextTF-LightAlt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Neutra text light bold */
+@font-face {
+	font-family: 'NeutraText';
+	src: url('src/NeutraText-BoldAlt.eot');
+	src: local('☺'), url('src/NeutraText-BoldAlt.woff') format('woff'), url('src/NeutraText-BoldAlt.ttf') format('truetype'), url('src/NeutraText-BoldAlt.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}

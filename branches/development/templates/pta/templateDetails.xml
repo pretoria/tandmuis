@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>pta</name>
+	<creationDate>2013/08/26</creationDate>
+	<author>Pretoria.co.za</author>
+	<authorEmail>carlo@pretoria.co.za</authorEmail>
+	<authorUrl>http://www.pretoria.co.za</authorUrl>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>Web Responsive Template</description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>              
+	</files>
+	<positions>         
+		<position>logo</position>
+		<position>top</position>
+		<position>menubar_1</position>
+		<position>menubar_2</position>
+		<position>menubar_3</position>
+		<position>menubar_4</position>
+		<position>menubar_5</position>
+		<position>menubar_6</position>
+		<position>menubar_7</position>
+		<position>menu</position>
+		<position>home_imageslider</position>
+		<position>breadcrumb</position>
+		<position>right</position>
+		<position>content_header</position>
+		<position>content_1</position>
+		<position>content_2</position>
+		<position>content_3</position>
+		<position>content_footer</position>
+		<position>footer</position>
+	</positions>
+</extension>

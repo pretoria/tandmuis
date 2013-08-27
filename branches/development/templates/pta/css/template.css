@@ -1,0 +1,551 @@
+/* Template CSS */
+
+/* Importing needed fonts */
+@import '../fonts/neutratext.css';
+@import '../fonts/tradegothic.css';
+
+body { background: #3968ab; color: #ffffff; font-family: 'NeutraText', Arial, sans-serif; font-weight: normal; font-size: 16px; text-rendering: optimizeLegibility; }
+
+h1, h2, h3, h4, h5, h6, .tradegothic { font-family: 'TradeGothic', Arial, sans-serif; text-transform: uppercase; }
+p.heading-1, p.heading-2 { font-family: 'TradeGothic', Arial, sans-serif; text-transform: uppercase; font-size: 40px; font-weight: bold; line-height: 1em; }
+p.heading-1 { margin-top: 30px; }
+p.heading-2 { font-size: 30px; }
+
+a, a:link { color: #FFFFFF; text-transform: uppercase; text-decoration: none; }
+
+a.button { display: block; font-size: 25px; background: #305993; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 25px 40px; font-weight: bold; }
+a.button.didyouknow:hover { color: #5a97c1; }
+
+sup { font-size: 65%; }
+
+.item-page { max-width: 640px; margin: 0 auto; padding-top: 30px; }
+
+/* Modal style overrides */
+.modal { width: 700px; margin-left: -350px; background: #FFFFFF url(../img/ajax-loader-accordion.gif) center center no-repeat; }
+.ipad.landscape .modal.fade.in { top: 2%; }
+.modal-header { min-height: 30px; z-index: 100; position: relative;
+	-webkit-box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.3);
+	box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.3);
+}
+.modal-body { padding: 0; height: 640px; max-height: 640px;
+	-moz-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	overflow: auto;
+}
+.ipad.landscape .modal-body { max-height: 590px; }
+.ipad.portrait .modal-body { max-height: 700px; }
+
+.modal-backdrop, .modal-backdrop.fade.in { opacity: 0.6; filter: alpha(opacity=60) }
+
+/* Home page styles */
+header#intro { text-align: right; }
+header#intro img { margin-left: 10px; }
+header#intro h1 { padding-top: 30px; }
+header#intro .line1 { font-size: 35px; font-weight: normal; }
+header#intro .line2 { font-size: 58px; font-weight: bold; line-height: 0.9em; }
+header#intro .line3 { font-size: 85px; font-weight: bold; line-height: 0.9em; }
+
+nav.navigation { margin-top: 20px; margin-bottom: 20px; overflow: hidden; text-transform: uppercase; }
+nav.navigation ul { list-style: none; width: 100%; margin: 0; padding: 0; }
+nav.navigation ul li {  }
+
+nav.navigation ul li a, nav.navigation .accordion-group .accordion-heading a { background: #5a97c1; display: block; }
+nav.navigation .accordion-group .accordion-heading a { height: 30px; line-height: 35px; }
+nav.navigation .accordion-group { margin: 0; border: none; }
+nav.navigation ul li:nth-child(1) a {}
+nav.navigation ul li:nth-child(2) a, nav.navigation .accordion-group:nth-child(2) .accordion-heading a { background-color: #1075ae; }
+nav.navigation ul li:nth-child(3) a, nav.navigation .accordion-group:nth-child(3) .accordion-heading a { background-color: #5ac9df; color: #004b8d; }
+nav.navigation ul li:nth-child(4) a, nav.navigation .accordion-group:nth-child(4) .accordion-heading a { background-color: #98d4f4; color: #004b8d; }
+
+/* web/tablet menu styles */
+nav.navigation#tablet-web-nav { font-size: 30px; }
+nav.navigation#tablet-web-nav ul li { list-style: none; display: inline-block; margin-right: 15px; float: left; background: #004a8d; }
+nav.navigation#tablet-web-nav ul li:nth-child(1) { border-top: 50px #004a8d solid; border-left: 40px #004a8d solid;
+	-moz-border-top-left-radius: 80px;
+	-webkit-border-top-left-radius: 80px;
+	border-top-left-radius: 80px;
+}
+nav.navigation#tablet-web-nav ul li:nth-child(2) { margin-right: 0; border-top: 50px #004a8d solid; border-right: 40px #004a8d solid;
+	-moz-border-top-right-radius: 80px;
+	-webkit-border-top-right-radius: 80px;
+	border-top-right-radius: 80px;
+}
+nav.navigation#tablet-web-nav ul li:nth-child(3) { margin-top:15px; border-bottom: 50px #004a8d solid; border-left: 40px #004a8d solid;
+	-moz-border-bottom-left-radius: 80px;
+	-webkit-border-bottom-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+}
+nav.navigation#tablet-web-nav ul li:nth-child(4) { margin-right: 0; margin-top:15px; border-bottom: 50px #004a8d solid; border-right: 40px #004a8d solid; border-bottom-right-radius: 80px; }
+
+nav.navigation#tablet-web-nav ul li a { background: #5a97c1; display: block; width: 270px; text-align: center; padding: 120px 0; height: 40px; line-height: 110%; }
+nav.navigation#tablet-web-nav ul li:nth-child(1) a { border-top-left-radius: 40px; }
+nav.navigation#tablet-web-nav ul li:nth-child(2) a { background-color: #1075ae; border-top-right-radius: 40px; }
+nav.navigation#tablet-web-nav ul li:nth-child(3) a { background-color: #5ac9df; border-bottom-left-radius: 40px; color: #004b8d; }
+nav.navigation#tablet-web-nav ul li:nth-child(4) a { background-color: #98d4f4; border-bottom-right-radius: 40px; color: #004b8d; }
+
+/* web/tablet menu hover styles */
+nav.navigation#tablet-web-nav ul li:nth-child(1) a:hover { background: #63a6d4; border-top-left-radius: 40px; }
+nav.navigation#tablet-web-nav ul li:nth-child(2) a:hover { background: #1285c6; border-top-right-radius: 40px; }
+nav.navigation#tablet-web-nav ul li:nth-child(3) a:hover { background: #5fd5ec; border-bottom-left-radius: 40px; }
+nav.navigation#tablet-web-nav ul li:nth-child(4) a:hover { background: #9cdafb; border-bottom-right-radius: 40px; }
+
+/* phone menu styles */
+nav.navigation#mobile-nav { font-size: 25px; font-weight: bold; }
+nav.navigation#mobile-nav ul li a { line-height: 120%; padding: 20px 35px; }
+nav.navigation#mobile-nav ul li:first-child a { border-top-left-radius: 20px; border-top-right-radius: 20px; }
+nav.navigation#mobile-nav ul li:last-child a { border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }
+
+/* generic page styles */
+h2.intro { font-size: 22px; line-height: 100%; font-weight: normal; }
+.question-blurb { text-align: left; font-size: 30px; line-height: 100%; font-weight: 600; }
+.question-blurb .question-buttons { margin-top: 10px; }
+.question-blurb a.button { padding: 25px 25px 20px 25px; display: inline-block; float: left; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; margin-right: 4px; background: #518ab1; font-weight: normal; }
+
+body.division.prevention .question-blurb a.button { padding: 25px 15px 20px; }
+.question-blurb a.no { background: #8abedd; }
+.question-blurb a.orochlor { background: #55b7cb; }
+.question-blurb a.scorbex { background: #53b7cc; }
+.question-blurb a.flora-balance { background: #538bb2; padding-top: 11px !important; padding-bottom: 9px !important; text-align: center; }
+.question-blurb a.moducare { background: #8abedd; }
+.question-blurb a.puma { background: #53b7cc; }
+.question-blurb a.borstol { background: #538bb2; }
+.question-blurb a.flutex { background: #8abedd; }
+
+.question-blurb a.button:first-child { -moz-border-top-left-radius: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px;
+-moz-border-bottom-left-radius: 10px; -webkit-border-bottom-left-radius: 10px; border-bottom-left-radius: 10px; }
+.question-blurb a.button:last-child { -moz-border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px;
+-moz-border-bottom-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; margin-right: 0; }
+
+/* division pages */
+body.division { background-color: #0074ae; background-image: url(../img/background-coldsflu.jpg); background-position: right top; background-repeat: repeat-y; }
+body.division .item-page { margin-right: 255px; text-align: right; }
+body.division h1 { font-size: 80px; line-height: 85%; margin-bottom: -10px; }
+
+body.division.sore-throats { background-color: #5a97c1; background-image: url(../img/background-sorethroats.jpg); }
+
+body.division.prevention { background-color: #5ac9df; background-image: url(../img/background-prevention.jpg); }
+body.division.prevention h1, body.division.prevention h2.intro { color: #00529c; }
+
+body.division.coughs { background-color: #98d4f4; background-image: url(../img/background-coughs.jpg); }
+body.division.coughs h1, body.division.coughs h2.intro { color: #0d74ae; }
+
+/* product pages */
+body.product { background-color: #0074ae; font-family: 'NeutraText'; }
+body.product .item-page { max-width: 640px; }
+
+body.product h1, body.product h2, body.product h3, body.product h4, body.product h5, body.product h6 { font-family: 'NeutraText'; }
+
+/* ==================================== RENDER BOTTOM BORDER ==================================== */
+body.product h1, body.product h2, body.product h3, body.product h4, body.product h5, body.product .dosage-container .dosage-info, body.updates h1, body.updates h2, body.share h1, body.share h2, body.thankyou h1, body.thankyou h2, p.heading-1 { border-bottom: 6px #FFFFFF solid; }
+body.product h1 { font-size: 105px; line-height: 80%; }
+body.product h2, body.product h3 { font-weight: normal; font-size: 30px; line-height: 100%; }
+body.product h4 { font-size: 40px; line-height: 100%; margin: 0; }
+body.product h5 { font-size: 30px; line-height: 100%; margin: 10px 0; }
+
+body.product .dosage-container { background: #55b7cb; padding: 20px; margin: 60px 0; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
+body.product.florabalance .dosage-container { height: 310px; }
+body.product.florabalance h1 { font-size: 63px; }
+
+body.product .dosage-container .dosage-info { font-size: 20px; line-height: 120%; padding-bottom: 5px; }
+body.product .dosage-container .dosage-info:last-child { border-bottom: none; padding-bottom: 0; }
+body.product .dosage-container .dosage-info span { font-weight: bold; text-transform: uppercase; }
+
+.product-specification span { display: inline-block; border: 1px #FFFFFF solid; padding: 0 2px 2px; height: 15px; }
+
+/* prevention products pages */
+body.product.prevention-product { background-color: #5ac9df; }
+
+/* sore throats products pages */
+body.product.sorethroats-product { background-color: #5a97c1; }
+body.product.sorethroats-product .dosage-container { background: #8bc1de; }
+
+/* colds-flu products pages */
+body.product.coldsflu-product { background-color: #5ac9df; }
+
+/* coughs products page */
+body.product.coughs-product { background: #98d4f4; }
+body.product.coughs-product .dosage-container { background-color: #8bc1de; }
+
+/* dosage-info no-border style */
+body.product.moducare .dosage-container .dosage-info, body.product.throflam .dosage-container .dosage-info, body.product.sinuclear .dosage-container .dosage-info, body.product.puma .dosage-container .dosage-info, body.product.borstol .dosage-container .dosage-info, body.product.flutex .dosage-container .dosage-info { border-bottom: none; margin-top: 10px; }
+
+/* throflam product page */
+body.product.throflam h1 { font-size: 65px; line-height: 90%; }
+
+/* sinuclear product page */
+body.product.sinuclear h1 { font-size: 80px; line-height: 90%; }
+body.product.sinuclear h1 div { font-size: 38px; line-height: 100%; }
+body.product.sinuclear .dosage-container { margin-top: 100px; }
+
+/* puma product page */
+body.product.puma h1 { font-size: 62px; line-height: 90%; }
+
+/* borstol product page */
+body.product.borstol .dosage-container { height: 200px; }
+
+/* flutex product page */
+body.product.flutex h1 { font-size: 51px; line-height: 90%; }
+body.product.flutex .dosage-container { height: 550px; margin-bottom: 100px; }
+
+/* share buttons */
+div.share-buttons { margin: 0 auto 40px; max-width: 317px; width: 100%; overflow: hidden; }
+div.share-buttons a.updates { width: 80px; text-align: center; padding-top: 11px; padding-bottom: 4px; background: #53b7cc; }
+div.share-buttons a.share { background: #538bb2; }
+div.share-buttons a.home { background: #0d6aa0; }
+div.share-buttons a.back { background: #8abedd; }
+
+/* updates page */
+body.updates, body.thankyou { background: #5ac9df; }
+body.updates .intro, body.thankyou .intro { height: 300px; position: relative; }
+body.updates .intro img, body.share .intro img, body.thankyou .intro img { position: relative; z-index: 100; }
+body.updates .intro hr, body.thankyou .intro hr { height: 6px; background: #FFFFFF; border: none; vertical-align: bottom; position: relative; top: -6px; width: 72%; z-index: 90; }
+body.thankyou.firefox .intro hr { width: 460px; top: 220px; }
+body.updates h1, body.thankyou h1 { font-size: 160px; padding-bottom: 30px; margin-top: 1px; }
+body.updates h2, body.share h2, body.thankyou h2 { margin-bottom: 40px; }
+
+/* share page */
+body.share { background: #00529c; }
+body.share .intro { height: 175px; position: relative; }
+body.share .intro hr { height: 6px; background: #FFFFFF; border: none; vertical-align: bottom; position: relative; top: 92px; width: 62.5%; z-index: 90; }
+body.share h1 { font-size: 175px; padding-bottom: 30px; margin-top: 1px; }
+body.share .extra-buttons a.home { background: #518ab1; }
+body.share .extra-buttons a.back { background: #8abedd; }
+body.share .share-container form { margin: 0; }
+
+body.thankyou .extra-buttons a.button, body.updates .extra-buttons a.button { background: #FFFFFF; color: #00529c; }
+
+.social-buttons { float: right; margin-top: -50px; }
+.social-buttons a.button { background: none; background: url(../img/button-facebook.png) center center no-repeat; display: block; float: left; width: 40px; height: 40px; padding: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+.social-buttons a.button.twitter-btn { background-image: url(../img/button-twitter.png); }
+
+/* Accordion styles */
+.accordion .accordion-group:first-child .accordion-toggle {
+	-moz-border-top-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.accordion .accordion-group:last-child .accordion-toggle.collapsed {
+	-moz-border-bottom-left-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+nav.navigation .accordion .accordion-group:last-child .accordion-body.in {
+	-moz-border-bottom-left-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.accordion-inner { background: #FFFFFF url(../img/ajax-loader-accordion.gif) center center no-repeat; min-height: 30px; }
+.accordion-inner .item-page { color: #305993; background: none; padding: 0; }
+.accordion-inner .item-page h1 { display: none; }
+.accordion-inner .item-page br { display: none; }
+.accordion-inner .item-page .question-blurb a.button { padding: 10px 10px 2px; font-size: 20px; }
+
+/* Basic input styles */
+
+input.check, input[type='checkbox'] { display: none; }
+input.check + label span, input[type="checkbox"] + label {
+	color: #00529c;
+	font-size: 28px;
+	line-height: 30px;
+	font-family: 'TradeGothic', Arial, sans-serif;
+	text-transform: uppercase;
+	float: left;
+	margin-right: 10px;
+}
+input.check + label span, input[type="checkbox"] + label span {
+    display:inline-block;
+    margin-right: 5px;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    vertical-align:middle;
+    background: url(../img/check_radio_sprite.png) left top no-repeat;
+    cursor:pointer;
+}
+input.check:checked + label span, input[type="checkbox"]:checked + label span {
+    background: url(../img/check_radio_sprite.png) -19px top no-repeat;
+}
+
+input.radio, input[type='radio'] { display: none; }
+input.radio + label span, input[type="radio"] + label {
+	color: #00529c;
+	font-size: 28px;
+	line-height: 30px;
+	font-family: 'TradeGothic', Arial, sans-serif;
+	text-transform: uppercase;
+	float: left;
+	margin-right: 10px;
+}
+input.radio + label span, input[type="radio"] + label span {
+    display:inline-block;
+    margin-right: 5px;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    vertical-align:middle;
+    background: url(../img/check_radio_sprite.png) -39px top no-repeat;
+    cursor:pointer;
+}
+input.radio:checked + label span, input[type="radio"]:checked + label span {
+    background: url(../img/check_radio_sprite.png) -57px top no-repeat;
+}
+
+input.text, input[type="text"], input.email, input[type="email"] { max-width: 300px; width: 100%; height: 25px; margin-right: 8px; padding: 6px 7px 0; color: #6d6e71; font-family: 'TradeGothic', Arial, sans-serif; font-size: 20px; line-height: 25px; }
+
+input.button, input[type="button"], input[type="submit"] { background: #55b7cb url(../img/button.png) center center no-repeat; border: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; height: 35px; margin-bottom: 10px; width: 60px; color: white; font-family: 'TradeGothic', Arial, sans-serif; text-transform: uppercase; font-size: 25px; line-height: 25px; }
+input[type="submit"] { background-image: none; width: auto; height: auto; padding: 10px 20px 5px; }
+
+.thanks-message { font-size: 2em; line-height: 1em; margin-bottom: 30px; }
+
+/* Footer styles */
+.footer { max-width: 660px; width: 100%; margin: 0 auto; font-size: 25px; line-height: 100%; padding: 25px 0; }
+body.home .footer { max-width: 640px; }
+body.division .footer { max-width: 405px; margin: 0; text-align: right; margin-top: 75px; }
+.footer a { line-height: 100%; padding-top: 1px; }
+
+/* ==================================== TRANSITION ANIMATIONS ==================================== */
+
+h1, h2, h3, h4, h5, p, span { -webkit-transition: color .25s linear, font-size .25s linear .1s;
+transition: color .25s linear, font-size .25s linear .1s; }
+
+img { -webkit-transition: width .25s linear .1s; transition: width .25s linear .1s; }
+
+/* ==================================== MEDIA QUERIES ==================================== */
+@media screen and (max-width: 768px) {
+	.question-blurb a.button { font-size: 25px; padding: 24px 25px 17px; line-height: 1em; }
+	.question-blurb a.button.updates { font-size: 25px; padding: 10px 25px 6px; line-height: 1em; }
+}
+@media screen and (max-width: 640px) {
+	header#intro img { max-width: 200px; }
+	
+	header#intro h1 { line-height: 0.6em; }
+	header#intro h1 .line1 { font-size: 33px; line-height: 1em; }
+	header#intro h1 .line2 { font-size: 50px; line-height: 1em; }
+	header#intro h1 .line3 { font-size: 70px; line-height: 0.9em; }
+	
+	body.updates h1, body.thankyou h1 { font-size: 150px; }
+	body.share .intro { height: 170px; }
+	body.share h1 { font-size: 156px; }
+	
+	body.product h2 br, body.product h3 br, body.share h2 br, body.thankyou h2 br { display: inline; }
+	
+	body.product.sinuclear h1 div { font-size: 35px; }
+	
+	.question-blurb a.button { font-size: 25px; padding: 24px 25px 17px; line-height: 1em; }
+	.question-blurb a.button.updates { font-size: 25px; padding: 10px 25px 6px; line-height: 1em; }
+}
+@media screen and (max-width: 568px) {
+	header#intro img { max-width: 170px; }
+	
+	header#intro h1 { line-height: 0.7em; padding-top: 15px; }
+	header#intro h1 .line1 { font-size: 28px; }
+	header#intro h1 .line2 { font-size: 45px; line-height: 1.1em; }
+	header#intro h1 .line3 { font-size: 70px; line-height: 0.8em; }
+	
+	body.product.sinuclear h1 div { font-size: 26px; }
+	
+	.accordion-inner .item-page.prevention .question-blurb a.flora-balance { padding-bottom: 2px !important; padding-top: 10px !important; }
+	
+	.question-blurb a.button.updates { font-size: 25px; padding: 14px 20px 11px; line-height: 1em; }
+	
+	body.product .dosage-container { margin: 30px 0 10px; }
+}
+@media screen and (max-width: 480px) {
+	header#intro img { max-width: 170px; }
+	
+	header#intro h1 { line-height: 0.7em; }
+	header#intro h1 .line1 { font-size: 22px; }
+	header#intro h1 .line2 { font-size: 35px; line-height: 1.3em; }
+	header#intro h1 .line3 { font-size: 60px; line-height: 0.8em; }
+	
+	.accordion-inner .item-page.coughs .question-blurb a.button { font-size: 16px; padding: 10px 10px 5px; }
+	.accordion-inner .item-page.prevention .question-blurb a.button { padding: 10px 7px 5px; }
+	.accordion-inner .item-page.prevention .question-blurb a.flora-balance { padding-bottom: 5px !important; padding-top: 10px !important; }
+	
+	.question-blurb a.button { font-size: 25px; padding: 24px 20px 17px; line-height: 1em; }
+	.question-blurb a.button.updates { font-size: 25px; padding: 10px 20px 6px; line-height: 1em; }
+	
+	div.share-buttons { max-width: 287px; }
+	
+	body.updates h1, body.thankyou h1, body.share h1 { font-size: 100px; padding-bottom: 15px; }
+	body.share h1 { font-size: 118px; padding-bottom: 20px; }
+	body.updates .intro, body.thankyou .intro, body.share .intro { text-align: center; height: 150px; }
+	body.share .intro { height: 110px; }
+	body.updates .intro hr, body.thankyou .intro hr, body.share .intro hr { top: 100px; width: 340px; }
+	body.share .intro hr { top: 55px; width: 270px; }
+	body.updates .intro img, body.thankyou .intro img, body.share .intro img { max-width: 100px; }
+	body.share .intro img { max-width: 150px; }
+	
+	body.product.florabalance .dosage-container { height: auto; }
+	body.product.prevention-product .dosage-container img { float: none !important; margin: 0 !important; }
+	body.product.florabalance .dosage-container img { float: left !important; margin-right: 15px !important; }
+
+	
+	body.updates h2, body.share h2, body.thankyou h2 { font-size: 22px; line-height: 1.2em; }
+	
+	.social-buttons { float: none; margin: 0; }
+}
+
+/* Safari smallest width */
+@media screen and (max-width: 392px) {
+	header#intro img { max-width: 150px; }
+	
+	body > #content > .span12 > .item-page { padding-top: 10px; }
+	
+	header#intro h1 { line-height: 0.7em; padding-top: 10px; }
+	header#intro h1 .line1 { font-size: 24px; }
+	header#intro h1 .line2 { font-size: 27px; line-height: 1.1em; }
+	header#intro h1 .line3 { font-size: 44px; line-height: 1.1em; }
+	
+	body.product h1 { font-size: 75px; }
+	body.product.puma h1 { font-size: 50px; }
+	
+	body.product h2, body.product h3 { font-size: 24px; }
+	body.product.sinuclear h1 { font-size: 57px; }
+	body.product.moducare h1 { font-size: 50px; }
+	body.product.puma h1 { font-size: 40px; }
+	body.product.flutex h1 { font-size: 35px; }
+	
+	body.product .dosage-container img { margin: 0 auto !important; float: none !important; }
+	
+	body.product.florabalance .dosage-container img { float: none !important; margin-right: 0 !important; }
+	
+	body.share h1 { font-size: 86px; padding-bottom: 10px; }
+	body.thankyou h1 { font-size: 87px; padding-bottom: 15px; }
+	body.thankyou .intro img { max-width: 130px; float: none !important; margin: 0 !important; }
+	body.share .intro img { max-width: 130px; }
+	body.updates .intro, body.thankyou .intro, body.share .intro { text-align: center; height: 150px; }
+	body.share .intro { height: 110px; }
+	body.thankyou .intro { height: 160px; }
+	body.updates .intro hr, body.thankyou .intro hr, body.share .intro hr { top: 100px; }
+	body.thankyou .intro hr { top: -5px; width: 100%; }
+	body.share .intro hr { top: 70px; width: 200px; }
+	body.updates .intro img, body.thankyou .intro img, body.share .intro img { max-width: 100px; }
+	body.share .intro img { max-width: 150px; }
+	
+	.accordion-inner .item-page .question-blurb a.button { font-size: 18px; padding: 10px 10px 5px; }
+	.accordion-inner .item-page.prevention .question-blurb a.button { padding: 10px 7px 5px; }
+	
+	input.text, input[type="text"] { max-width: 265px; }
+}
+
+/* Galaxy portrait view */
+@media screen and (max-width: 360px) {
+	header#intro img { max-width: 150px; }
+	
+	header#intro h1 { line-height: 0.7em; padding-top: 10px; }
+	header#intro h1 .line1 { font-size: 20px; }
+	header#intro h1 .line2 { font-size: 23px; line-height: 1em; }
+	header#intro h1 .line3 { font-size: 35px; line-height: 1.3em; }
+	
+	.accordion-inner .item-page .question-blurb a.button { font-size: 22px; }
+	.accordion-inner .item-page.coughs .question-blurb a.button { font-size: 23px; padding: 10px 10px 5px; }
+	.accordion-inner .item-page.prevention .question-blurb a.button { font-size: 16px; padding: 10px 7px 5px; }
+	
+	body.thankyou h1 { font-size: 81px; padding-bottom: 15px; }
+	body.share h1 { font-size: 72px; padding-bottom: 10px; }
+	body.share .intro { height: 120px; }
+	body.share .intro hr { width: 160px; top: 85px; }
+	
+	input.text, input[type="text"] { max-width: 230px; }
+}
+
+/* iPhone 4/5 portrait mode */
+@media screen and (max-width: 320px) {
+
+	header#intro img { max-width: 120px; }
+	header#intro h1 { line-height: 0.5em; padding-top: 7px; }
+	header#intro h1 .line1 { font-size: 18px; }
+	header#intro h1 .line2 { font-size: 20px; line-height: 0.9em; }
+	header#intro h1 .line3 { font-size: 35px; line-height: 1.2em; }
+	
+	nav.navigation#mobile-nav { margin-top: 5px; margin-bottom: 15px; }
+	nav.navigation#mobile-nav .accordion { margin-bottom: 0; }
+	
+	.accordion-inner .item-page.coughs .question-blurb a.button { font-size: 19px; }
+	.accordion-inner .item-page.prevention .question-blurb a.button { font-size: 13px; }
+	
+	a.button.didyouknow { font-size: 20px; padding: 15px 20px 10px; }
+	
+	body.product h2, body.product h3 { font-size: 24px; }
+	body.product h2 br, body.product h3 br { display: none; }
+	
+	body.product.sorethroats-product h1 { font-size: 36px; }
+	body.product.orochlor h1 { font-size: 45px; }
+	body.product.throflam h2, body.product.throflam h3 { font-size: 24px; }
+	body.product.sorethroats-product .dosage-container { margin: 20px 0; }
+	
+	body.product.orochlor .dosage-container img { margin-bottom: -50px !important; }
+	body.product.orochlor h5 { font-size: 21px; }
+	
+	.question-blurb a.button { line-height: 1em; padding: 25px 8px 16px; width: auto; }
+	.question-blurb a.button.updates { padding: 15px 2px 10px; line-height: 0.9em; }
+	
+	body.product.borstol h1 { font-size: 60px; }
+	body.product.borstol .dosage-container, body.product.flutex .dosage-container { height: auto; margin-bottom: 10px; }
+	
+	body.product.sinuclear h1 { font-size: 50px; }
+	body.product.sinuclear .dosage-container { margin-top: 10px; }
+	
+	body.product.scorbex h1 { font-size: 62px; }
+	
+	body.updates h1, body.thankyou h1 { font-size: 85px; padding-bottom: 10px; }
+	body.thankyou h1 { font-size: 70px; }
+	body.share h1 { font-size: 120px; padding-bottom: 20px; }
+	body.updates .intro, body.thankyou .intro, body.share .intro { text-align: center; height: 150px; }
+	body.share .intro { height: 225px; }
+	body.updates .intro img, body.thankyou .intro img, body.share .intro img { float: none !important; }
+	body.updates .intro hr, body.thankyou .intro hr, body.share .intro hr { top: -10px; width: 100%; }
+	
+	body.updates h2, body.share h2, body.thankyou h2 { font-size: 22px; line-height: 1.2em; font-weight: normal; margin-bottom: 15px; }
+	
+	input.text, input[type="text"] { max-width: none; width: 95%; }
+	
+	.footer { padding: 0; margin: 15px 0; font-size: 15px; }
+}
+
+/* Anything smaller than an iPhone */
+@media screen and (max-width: 319px) {
+	body { font-size: 12px; }
+	
+	h1 { font-size: 50px !important; }
+	body.product h1 { font-size: 30px !important; }
+	h2 { font-size: 17px !important; padding-bottom: 5px; }
+	h3 { font-size: 16px !important; }
+	h4 { font-size: 15px !important; }
+	.dosage-container h4 { font-size: 25px !important; }
+	h5 { font-size: 15px !important; }
+	
+	.accordion-inner .item-page .question-blurb a.button, .accordion-inner .item-page.coughs .question-blurb a.button { font-size: 14px; }
+	
+	header#intro { text-align: center; line-height: 0.9em; }
+	header#intro img { float: none !important; }
+	header#intro h1 .line1 { font-size: 20px; }
+	header#intro h1 .line2 { font-size: 30px; line-height: 1.3em; }
+	header#intro h1 .line3 { font-size: 50px; line-height: 1.1em; }
+	
+	nav.navigation .accordion-group .accordion-heading a { font-size: 20px; }
+	
+	.share h1, .thankyou h1 { padding-bottom: 5px !important; }
+	div.intro { height: 190px !important; }
+	body.updates .intro img, body.thankyou .intro img, body.share .intro img { max-width: 150px; }
+	
+	.question-blurb a.button { font-size: 18px; }
+	
+	input.text, input[type="text"] { max-width: none; width: 95%; }
+	input.button, input[type="button"] {  }
+}
