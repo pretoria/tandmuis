@@ -23,7 +23,7 @@
 	</files>
 	<positions>         
 		<position>logo</position>
-		<position>top</position>
+		<position>banner_top</position>
 		<position>menubar_1</position>
 		<position>menubar_2</position>
 		<position>menubar_3</position>
@@ -34,7 +34,7 @@
 		<position>menu</position>
 		<position>home_imageslider</position>
 		<position>breadcrumb</position>
-		<position>right</position>
+		<position>content_right</position>
 		<position>content_header</position>
 		<position>content_1</position>
 		<position>content_2</position>
